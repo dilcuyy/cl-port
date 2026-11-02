@@ -291,3 +291,59 @@
     height: 17px !important;
   }
 }
+
+/* --- Mobile navbar: pill hug content, no stretched white bar --- */
+@media (max-width: 768px) {
+  .nav,
+  .nav.is-scrolled {
+    grid-template-columns: auto 1fr auto !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  .nav-brand,
+  .nav.is-scrolled .nav-brand {
+    justify-self: start !important;
+    width: auto !important;
+    max-width: 62vw !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    letter-spacing: 0.02em !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  .nav-end,
+  .nav.is-scrolled .nav-end {
+    justify-self: end !important;
+  }
+  .nav-menu-btn {
+    justify-self: end !important;
+    width: 44px !important;
+    height: 44px !important;
+    margin-left: 0 !important;
+  }
+  .nav > nav {
+    padding: 104px 24px calc(32px + env(safe-area-inset-bottom)) !important;
+  }
+}
+
+/* --- Tablet: keep the pill nav inside its frame (769px–1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-brand {
+    padding: 0 16px !important;
+    font-size: 17px !important;
+  }
+  .nav-links {
+    font-size: 13px !important;
+    gap: 0 !important;
+  }
+  .nav-links a {
+    padding: 8px 10px !important;
+  }
+  .nav-cta {
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+  }
+  .nav.is-scrolled .nav-brand {
+    padding: 0 16px !important;
+  }
+}
