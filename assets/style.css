@@ -362,3 +362,31 @@
 .nav .nav-links a.is-active {
   background: rgba(11, 16, 38, 0.08) !important;
 }
+
+/* --- Mobile menu overlay must stay dark in every nav state --- */
+@media (max-width: 768px) {
+  .nav > nav,
+  .nav.is-scrolled > nav,
+  .nav.is-open > nav {
+    background: #0b1026 !important;
+    background-image: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    color: #eef3f4 !important;
+  }
+  .nav.is-open .nav-brand,
+  .nav.is-open .nav-menu-btn {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    border-color: rgba(238, 243, 244, 0.35) !important;
+    color: #eef3f4 !important;
+  }
+  .nav.is-open .nav-brand {
+    border-color: transparent !important;
+  }
+}
