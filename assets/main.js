@@ -15579,7 +15579,7 @@ function ti() {
             children: [
               (0, j.jsx)(`p`, {
                 "data-reveal": !0,
-                children: `Mahasiswa S1 Sistem Informasi Universitas Bani Saleh dengan IPK 3,59/4,00. Memiliki pengalaman sebagai Field Enumerator di Badan Pusat Statistik (BPS) serta pengalaman magang di bidang IT Development.`,
+                children: `Lulusan Mahasiswa S1 Sistem Informasi Universitas Bani Saleh dengan IPK 3,59/4,00. Memiliki pengalaman sebagai Field Enumerator di Badan Pusat Statistik (BPS) serta pengalaman magang di bidang IT Development.`,
               }),
               (0, j.jsx)(`p`, {
                 "data-reveal": !0,
@@ -16515,9 +16515,6 @@ function yi() {
                     (0, j.jsx)(`span`, {
                       className: `cond footer-name`,
                       children: `Christin Latip`,
-                    }),
-                    (0, j.jsx)(`span`, {
-                      children: `Built with React and three.js in Bekasi`,
                     }),
                   ],
                 }),
